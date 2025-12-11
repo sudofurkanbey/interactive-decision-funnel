@@ -1,18 +1,22 @@
-#en Interactive Decision Funnel Prototype
+# 🇹🇷 Interactive Decision Funnel Prototype
+(Etkileşimli Karar Hunisi Prototipi)
 
-This project is developed using fundamental web technologies (HTML5, CSS3, Pure JavaScript) and includes a humorous and dynamic user interaction demo.
+This project is a humorous and dynamic user interaction demo developed using core web technologies (HTML5, CSS3, and Pure JavaScript).
 
-## 🎯 Project Purpose and Mechanics
-The main goal of the project is to make an action that the user is trying to avoid (NO) mandatory through dynamic interface manipulations and increasing rewards (YES).
+## 🎯 Project Goal and Mechanics
+The main objective of this prototype is to **guide a user towards an action they are actively trying to avoid (the 'NO' button) by using dynamic UI manipulations and increasing the perceived reward (the 'YES' button).**
 
-- **NO Button:** Moves, shrinks, and becomes harder to click as the mouse cursor approaches.
-- **YES Button:** Increases in size and prominence with each movement of the NO button, directing the user towards the inevitable conclusion.
-- **Final:** When the YES button is pressed, a video showing the result plays.
+- **The 'NO' Button:** On mouse hover or click, it randomly changes position, shrinks in size, and becomes progressively harder to interact with.
+- **The 'YES' Button:** It grows in size and significance every time the 'NO' button moves, subtly pushing the user toward the inevitable outcome.
+- **The Finale:** Clicking the 'YES' button triggers the final outcome video (a Turkish meme: "It's Over, Goddamnit!").
 
 ## 🛠️ Technologies Used
-- **HTML5:** Structural framework.
-- **CSS3:** Responsive Design with Flexbox and Media Queries, and animations (`transition`, `transform`).
-- **Vanilla JavaScript:** DOM manipulation, random positioning (`Math.random()`), sizing, and event listeners.
+- **HTML5:** Structural skeleton.
+- **CSS3:** Used for **Responsive Design** (Flexbox and Media Queries) and precise animations (`transition`, `transform`).
+- **Vanilla JavaScript:** DOM manipulation, random positioning (`Math.random()`), scaling, and event listeners (`mouseover`, `click`).
+
+## 🔗 Live Demo
+https://sudofurkanbey.github.io/interactive-decision-funnel/
 
 
 # 🇹🇷 Interactive Decision Funnel Prototype
@@ -31,3 +35,6 @@ Projenin temel amacı, kullanıcının kaçınmaya çalıştığı (HAYIR) bir e
 - **HTML5:** Yapısal iskelet.
 - **CSS3:** Flexbox ve Media Queries ile **Responsive Design** ve animasyonlar (`transition`, `transform`).
 - **Vanilla JavaScript:** DOM manipülasyonu, rastgele konumlandırma (`Math.random()`), boyutlandırma ve olay dinleyicileri.
+
+## 🔗 Canlı Demo
+https://sudofurkanbey.github.io/interactive-decision-funnel/
