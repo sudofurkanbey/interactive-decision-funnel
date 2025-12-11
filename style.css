@@ -1,0 +1,114 @@
+/* 1. Reset ve Global Ayarlar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Responsive tasarım için en önemli kural */
+    font-family: 'Montserrat', sans-serif; /* HTML'e bağladığımız font */
+}
+
+/* 2. Sayfa Arka Planı ve Yerleşim */
+body {
+    background-color: #121212; /* Koyu modern arka plan */
+    color: #E0E0E0; /* Açık yazı rengi */
+    display: flex;
+    justify-content: center; /* Yatayda ortala */
+    align-items: center; /* Dikeyde ortala */
+    min-height: 100vh; /* Ekranın tamamını kapla */
+    overflow: hidden; /* Taşmaları engelle */
+    text-align: center;
+}
+
+/* 3. Ana Kapsayıcı Stilleri */
+.main-container {
+    width: 90%;
+    max-width: 500px;
+    padding: 60px;
+    background: rgba(40, 40, 40, 0.9); /* Yarı şeffaf koyu kutu */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Derinlik hissi veren gölge */
+    z-index: 10;
+}
+
+/* 4. Başlık Stili */
+.title-text {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 100px;
+    letter-spacing: 2px; /* Harf aralığı */
+}
+
+/* 5. Butonların Yerleşimi */
+.button-area {
+    display: flex;
+    justify-content: space-around; /* Butonlar arasında eşit boşluk */
+    gap: 20px; /* Butonlar arası boşluk */
+}
+
+/* 6. Genel Buton Stili (action-button) */
+.action-button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px; /* Yuvarlak kenarlar */
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Tüm animasyonlar için temel geçiş süresi */
+    flex-grow: 1; /* Esnek büyüme (mobil uyumluluk için) */
+    position: relative; /* JavaScript hareketleri için zorunlu */
+}
+
+/* 7. EVET Butonu (Başlangıç Rengi) */
+.yes {
+    background-color: #4CAF50; /* Yeşil */
+    color: white;
+}
+
+.yes:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Hafif büyüme efekti */
+}
+
+/* 8. HAYIR Butonu (Başlangıç Rengi) */
+.no {
+    background-color: #F44336; /* Kırmızı */
+    color: white;
+}
+
+.no:hover {
+    background-color: #e53935;
+}
+
+/* 9. Mobil Uyumlu Buton Yerleşimi (550px altı) */
+@media (max-width: 550px) {
+    .button-area {
+        flex-direction: column; /* Küçük ekranlarda alt alta gel */
+    }
+
+    .title-text {
+        font-size: 2em;
+    }
+}
+
+/* 10. Video Kaplaması ve Gizleme/Gösterme */
+.video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.video-overlay video {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none !important; /* JavaScript ile gösterilene kadar gizle */
+}
